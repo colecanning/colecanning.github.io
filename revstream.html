@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevStream - Drive. Stream. Earn.</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+        /* Utility classes */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-primary {
+            background-color: #ffffff;
+            color: #4a00e0;
+        }
+        .btn-primary:hover {
+            background-color: #f0f0f0;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: #4a00e0;
+        }
+        /* Header styles */
+        header {
+            background-color: #4a00e0;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        /* Hero section styles */
+        .hero {
+            background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+            color: #ffffff;
+            padding: 100px 0;
+        }
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        .phone-mockup {
+            width: 280px;
+            height: 560px;
+            background-color: #1a1a1a;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 14px solid #2a2a2a;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+        /* Features section styles */
+        .features {
+            background-color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .features-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .feature {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .feature-icon {
+            font-size: 48px;
+            color: #4a00e0;
+            margin-bottom: 20px;
+        }
+        /* CTA section styles */
+        .cta {
+            background-color: #f5f5f5;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .cta form {
+            margin-top: 30px;
+        }
+        .cta input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #ffffff;
+            color: #666;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer ul {
+            list-style-type: none;
+            display: flex;
+        }
+        footer ul li {
+            margin-left: 20px;
+        }
+        footer ul li a {
+            color: #666;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>RevStream</h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Drive. Stream. Earn.</h1>
+                    <p>RevStream is the ultimate music app for rideshare drivers. Enjoy great music, earn extra cash, and enhance your driving experience.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Download App</a>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <img src="app.svg?height=640&width=320" alt="RevStream App" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why RevStream?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Best Music Selection</h3>
+                        <p>Enjoy a curated playlist of top hits and discover new tracks while you drive.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💰</div>
+                        <h3>Earn Extra Cash</h3>
+                        <p>Make up to $200 per month just by using RevStream during your rides.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🚗</div>
+                        <h3>Enhance Your Rides</h3>
+                        <p>Improve passenger experience with great music and potentially increase your ratings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to RevStream?</h2>
+                <p>Join thousands of drivers who are already earning more while enjoying their favorite tunes.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Get Started</button>
+                </form>
+                <p class="disclaimer">By subscribing, you agree to our Terms of Service and Privacy Policy.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RevStream. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script async defer src="https://play.adtonos.com/attc-CTHef3bgvYyDse38i.min.js"></script>
+</body>
+</html>
