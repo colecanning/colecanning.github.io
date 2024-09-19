@@ -172,7 +172,7 @@
     </header>
 
     <div id="container"></div>
-        <script>
+        <script async defer>
             (async function(VASTPlayer) {
                    'use strict';
    
@@ -182,7 +182,7 @@
                        console.log('Ad finished playback!');
                    });
                    console.log("sleeping...")
-                   await new Promise(r => setTimeout(r, 2000));
+                   await new Promise(r => setTimeout(r, 10000));
                    console.log("done sleeping.")
    
                    player.load(
