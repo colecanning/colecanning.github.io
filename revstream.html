@@ -158,6 +158,8 @@
     </style>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/vast-player@0.2/dist/vast-player.min.js"></script>
+
     <header>
         <nav class="container">
             <h1>RevStream</h1>
@@ -168,6 +170,38 @@
             </ul>
         </nav>
     </header>
+
+    <div id="container"></div>
+        <script>
+            (async function(VASTPlayer) {
+                   'use strict';
+   
+                   var player = new VASTPlayer(document.getElementById('container'));
+   
+                   player.once('AdStopped', function() {
+                       console.log('Ad finished playback!');
+                   });
+                   console.log("sleeping...")
+                   await new Promise(r => setTimeout(r, 2000));
+                   console.log("done sleeping.")
+   
+                   player.load(
+                    //    'https://platform-staging.reelcontent.com/api/public/vast/2.0/tag?campaign=cam-e951792a909f17'
+                    //    'https://play.adtonos.com/xml/e9d3BE2S9xtu6cBqz/vast.xml'
+                    'https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='
+                    // 'https://vast.adtonos.com/xml/e9d3BE2S9xtu6cBqz/vast.xml?ver=4.0&adType=preroll&contentType=audio&targeting=on'
+                        // 'https://vast-adapter.adtonos.com/xml/e9d3BE2S9xtu6cBqz/vast.xml?ver=4.0&adType=preroll&contentType=audio&targeting=on'
+                   ).then(function startAd() {
+                        console.log("starting ad...")
+                       return player.startAd();
+                       console.log("started ad")
+
+                   }).catch(function(reason) {
+                        console.log("ERROR")
+                       setTimeout(function() { throw reason; }, 0);
+                   });
+               }(window.VASTPlayer));
+       </script>
 
     <main>
         <section class="hero">
