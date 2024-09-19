@@ -38,3 +38,4 @@ adform.com, 3062, RESELLER, 9f5210a2f0999e32
 xandr.com, 13167, RESELLER
 admixer.net, cd05d1eb-e5c3-4d79-a59b-7053ba4cd985, RESELLER
 widesound.io, 10010167, RESELLER, 03facf30f100112b2
+google.com, pub-1388642954172284, DIRECT, f08c47fec0942fa0
